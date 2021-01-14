@@ -28,6 +28,14 @@ const Articles = () => {
     }, [loading]
   )
 
+  useEffect(() => {
+    console.log("ARTICLES DETECTED BY USEEFFECT - 1", articles)
+    if (articles) {
+      console.log("ARTICLES DETECTED BY USEEFFECT - 2", articles)
+      }
+    }, [articles]
+  )
+
 
   return (
     <div>
