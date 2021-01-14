@@ -8,6 +8,8 @@ const ArticleProvider = ({ children }) => {
     { id: 2, title: "post 2", body: "Quisque cursus, metus vitae pharetra" }
   ]);
 
+  console.log("ARTICLE PROVIDER CHILDREN READY", children)
+
   return (
     <ArticleContext.Provider value={{ articles, dispatch }}>
       {children}
